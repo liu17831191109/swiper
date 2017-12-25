@@ -1,0 +1,313 @@
+*{
+
+    box-sizing:border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+
+
+}
+
+.clearfix::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+.right{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #5a5a5a;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-prev{
+    top:5%;
+    left: 49%;
+    background-image: none;
+    color: #cccccc;
+    font-size: 35px;
+    text-align: center;
+}
+.swiper-button-next{
+    top: 95%;
+    left: 49%;
+    background-image: none;
+    color: #cccccc;
+    font-size:35px;
+    text-align: center;
+}
+.swiper-button-next,.swiper-button-prev{
+    transform:rotate(90deg);
+}
+.swiper-container-vertical>.swiper-pagination-bullets{
+    right: 8px;
+}
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper .swiper-slide .item-01{
+    width: 100%;
+    height: 100%;
+    background: url("../img/background-00.jpg")no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.swiper-wrapper .swiper-slide .item-02{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.swiper-wrapper .swiper-slide .item-02 img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper .swiper-slide .item-03{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+}
+.swiper-wrapper .swiper-slide .item-03 img{
+    width: 100%;
+    height: 100%;
+}
+/*!*swiper-slide:nth-of-type(1)开始*!*/
+.swiper-wrapper .swiper-slide:nth-of-type(1) .item-04{
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+}
+.swiper-wrapper .swiper-slide:nth-of-type(1) .item-05{
+    width: 90%;
+    position: absolute;
+    bottom: 20%;
+    color: #ffffcc;
+    left: 5%;
+    text-align: center;
+
+}
+.swiper-wrapper .swiper-slide:nth-of-type(1) .item-05 p{
+    margin:10px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(1) .item-05 h4{
+    margin:15px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(1) .item-05 h3{
+    margin:15px;
+}
+
+/*!*swiper-slide:nth-of-type(1)结束*!*/
+
+/*!*swiper-slide:nth-of-type(2)开始*!*/
+.swiper-wrapper .swiper-slide:nth-of-type(2) .item-04{
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    color: #ffffcc;
+    top: 8%;
+    left: 10%;
+    text-align: left;
+}
+.indent{
+    text-indent: 2em;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(2) .item-04 p{
+    font-size: 13px;
+}
+/*swiper-slide:nth-of-type(2)结束*/
+
+
+/*swiper-slide:nth-of-type(3)开始*/
+.swiper-wrapper .swiper-slide:nth-of-type(3) .item-04{
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    color: #ffffcc;
+    top: 8%;
+    left: 10%;
+    text-align: left;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(3) .item-04 .p-01{
+    text-indent: 2em;
+    text-align: left;
+    font-size: 14px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(3) .item-04 img{
+    width: 100%;
+
+}
+
+/*swiper-slide:nth-of-type(3)结束*/
+
+/*swiper-slide:nth-of-type(4)开始*/
+.swiper-wrapper .swiper-slide:nth-of-type(4) .item-04{
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    color: #ffffcc;
+    top: 8%;
+    left: 10%;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(4) .item-04 h2{
+    margin:10px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(4) .item-04 img{
+    width: 100%;
+    max-height:94%;
+}
+
+/*swiper-slide:nth-of-type(4)结束*/
+
+/*swiper-slide:nth-of-type(5)开始*/
+.swiper-wrapper .swiper-slide:nth-of-type(5) .item-04{
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    color: #ffffcc;
+    top: 8%;
+    left: 10%;
+    overflow: hidden;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(5) .item-04 .text{
+    position: relative;
+    font-size: 15px;
+    width: 2px;
+    height: 250px;
+    margin:0 auto ;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(5) .item-04 .text .left{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: -107px;
+    width: 77px;
+    height: 207px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(5) .item-04 .text .right{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 120px;
+    height: 225px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(5) .item-04 .text .s-01{
+    background-color: #ffffcc;
+    height: 250px;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+}
+/*swiper-slide:nth-of-type(5)结束*/
+
+/*swiper-slide:nth-of-type(6)开始*/
+
+.swiper-wrapper .swiper-slide:nth-of-type(6) .item-04{
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    color: #ffffcc;
+    top: 8%;
+    left: 10%;
+}
+.ditu {
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15%;
+    border: 1px solid #999;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(6) .item-04 .text-02{
+    font-size: 13px;
+    margin-top: 20px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(6) .item-04 .text-02 p{
+    margin: 10px 0;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(6) .ditu img{
+    width: 100%;
+    height: 100%;
+}
+
+/*swiper-slide:nth-of-type(6)结束*/
+
+/*swiper-slide:nth-of-type(7)开始*/
+.swiper-wrapper .swiper-slide:nth-of-type(7) .item-04{
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    color: #ffffcc;
+    top: 8%;
+    left: 10%;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(7) .item-04 form{
+
+}
+.swiper-wrapper .swiper-slide:nth-of-type(7) .item-04 form input{
+    width: 243px;
+    height: 35px;
+    border: none;
+    outline:none;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(7) .item-04 form button{
+    width: 243px;
+    background-color: #ffffff;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+}
+/*swiper-slide:nth-of-type(7)结束*/
